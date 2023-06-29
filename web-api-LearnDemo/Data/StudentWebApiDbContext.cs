@@ -13,5 +13,10 @@ namespace web_api_LearnDemo.Data
         public DbSet<Difficulty> Diffculties { get; set; }  
         public DbSet<Region> Regions { get; set; }   
         public DbSet<Walk> Walks { get; set; }  
+
+        public DbSet<Contact> Contacts { get; set; }    
+
+        
+        
     }
 }

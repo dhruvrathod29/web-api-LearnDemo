@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using web_api_LearnDemo.Data;
 
@@ -11,9 +12,11 @@ using web_api_LearnDemo.Data;
 namespace web_api_LearnDemo.Migrations
 {
     [DbContext(typeof(StudentWebApiDbContext))]
-    partial class StudentWebApiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230629121721_Create Contact Table")]
+    partial class CreateContactTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
