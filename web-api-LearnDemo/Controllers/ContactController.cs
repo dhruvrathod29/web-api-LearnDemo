@@ -18,7 +18,7 @@ namespace web_api_LearnDemo.Controllers
             this.dbContext = dbContext;   
         }
 
-        #region Get All Student
+        #region Get All Contact
         [HttpGet]
         public async Task<IActionResult> GetAllContacts()
         {
