@@ -11,6 +11,8 @@ namespace web_api_LearnDemo.Controllers
     public class StudentsController : ControllerBase
     {
         // GET:https://localhost:portnumber/api/Students
+        // this is the static data print the webapi 
+
         [HttpGet]
         public IActionResult GetAllStudents()
         {
